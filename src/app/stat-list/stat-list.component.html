@@ -1,0 +1,26 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Publisher</th>
+          <th scope="col">Advertiser</th>
+          <th scope="col">Offer</th>
+          <th scope="col">Sales Amount</th>
+          <th scope="col">Commission</th>
+          <th scope="col">Publisher's earning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stat of stats">
+          <td>{{ stat.publisherName }}</td>
+          <td>{{ stat.advertiserName }}</td>
+          <td>{{ stat.offerName }}</td>
+          <td>{{ stat.salesAmount }}</td>
+          <td>{{ stat.commission }}</td>
+          <td>{{ stat.publisherEarning }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
